@@ -10,7 +10,6 @@ if (mq.matches) {
 document.getElementById("btn").addEventListener("click", () => {
   if (mq.matches) {
     document.getElementById("container").style.height = "53vh";
-    document.getElementById("container").style.marginTop = "20px";
     loading.style.margin="0 100px"
   }
   loading.innerText="LOADING...."
