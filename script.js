@@ -20,7 +20,7 @@ document.getElementById("btn").addEventListener("click", () => {
   loading.style.display="inline-block"
   display.style.display="none"
 
-  fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=20c17fa9fcf1314d7ca2460a18f8ed82`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=20c17fa9fcf1314d7ca2460a18f8ed82`)
     .then((response) => response.json())
     .then((data) => {
       let city = data["name"];
