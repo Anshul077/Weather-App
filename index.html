@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/67d8aaf87b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="banner">
+      <img id="bannerImage" src="bg.jpg" alt="" >
+    </div>
+    <div id="container">
+      <div class="input-submit">
+        <input type="text" id="text" placeholder="Enter the city name" />
+        <button id="btn"><i class="fas fa-search"></i></button>
+      </div>
+      <span id="loading">LOADING.... </span>
+      <div id="display">
+        <p id="weather">WEATHER IN <span id="city">SHIMLA</span></p>
+        <p id="temp">25°C</p>
+        <div class="info">
+          <img id="image" src="cloud.png" height="70px" width="70px" />
+          <span id="info2"> BROKEN CLOUDS</span>
+        </div>
+        <span id="humidity">HUMIDITY: 60%</span>
+        <p id="speed">WIND SPEED: 4KM/HR</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.banner{
+    width: 100%;
+  height: 682px;
+  overflow: hidden;
+}
+
+#container{
+    height: 62vh;
+    max-width: 31vw;
+    background-color: rgba(172, 172, 172, 0.8);
+    color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    backdrop-filter: blur(200px);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.30);
+}
+
+#city{
+    color: greenyellow;
+}
+
+.input-submit{
+    height: 9.5vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+input[type=text]{
+    height: 5.5vh;
+    max-width: 20vw;
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    padding: 0 20px;
+    background-color: #333;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+[type=text]:focus {
+    outline: none;
+ }
+
+#btn{
+     height: 5.5vh;
+     width:5.5vh;
+     border-radius: 10px;
+     border: none;
+     background-color: #333;
+     color: white;
+     cursor: pointer;
+ }
+ 
+#btn:hover{
+    background-color: white;
+    color: black;
+    transition: background-color .2s ease-in-out;
+}
+
+#display{
+    height: 35vh;
+    margin: 0 30px;
+}
+
+#weather{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ #temp{
+     font-size: 60px;
+ }
+
+ #info2, #humidity,#speed{
+     margin: 20px 0;
+     font-size: 18px;
+ }
+
+ #info2{
+     vertical-align: middle;
+ }
+
+.info{
+    text-align: start;
+    margin: 15px 0;
+}
+
+#loading{
+     text-align: center;
+     display:none;
+     margin: 0 150px;
+ }
+#wrong{
+     text-align: center;
+     display:none;
+     margin: 0 150px;
+ }
+
+#image{
+    vertical-align: middle;
+    margin: -10px;
+}
+
+#bannerImage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:450px){
+    #container{
+        height:53vh;
+        max-width: 72vw;
+    }
+    input[type=text]{
+        max-width: 42vw;
+    }
+    .input-submit{
+        width: 72vw;
+    }
+    #weather{
+        font-size: 23px;
+    }
+    #temp{
+        font-size: 50px;
+    }
+    #image{
+        height: 50px;
+        width: 50px;
+    }
+    #speed,#humidity,#info2{
+        font-size: 15px;
+    }
+}
