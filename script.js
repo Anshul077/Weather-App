@@ -20,7 +20,7 @@ document.getElementById("btn").addEventListener("click", () => {
   display.style.display="none"
 
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=20c17fa9fcf1314d7ca2460a18f8ed82`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=20c17fa9fcf1314d7ca2460a18f8ed82`
   )
     .then((response) => response.json())
     .then((data) => {
